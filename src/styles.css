@@ -1,0 +1,77 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald|Poiret+One');
+
+body {
+    padding: 0;
+    margin: 0;
+    font-family: Oswald, sans-serif;
+}
+
+section {
+    padding: 25px;
+    text-align: center;
+}
+
+p {
+    color: white;
+    font-size: 13px;
+}
+
+ul li {
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px, 15px;
+    background-color:#7887AB;
+    border: 1px solid lightgray;
+    margin: 0;
+    transition: .5s;
+    transition-property: background-color,
+}
+
+ul li:hover {
+    background-color: #2E4272;
+    border: 1px solid white;
+}
+
+li a {
+    text-decoration: none;
+    padding: 5px;
+    color: white;
+}
+
+.header {
+    background-color: #7887AB;
+    padding: 20px;
+    text-align: center;
+}
+
+#snowboarding {
+    background-color:#4F628E;
+}
+
+#graphic-design {
+    background-color: #2E4272;
+}
+
+#video-games {
+    background-color: #162955;
+}
+
+img {   
+    width: 200px;
+}
+
+h1, h2 {
+    color: white;
+    text-align: center;
+    font-family: 'Poiret One', sans-serif;
+}
+
+ol {
+    list-style-position: inside;
+    color: white;
+    display: inline;
+}
+
+h3 {
+    color: white;
+}
