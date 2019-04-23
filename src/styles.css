@@ -7,7 +7,7 @@ body {
 }
 
 section {
-    padding: 30px;
+    padding: 25px;
     text-align: center;
 }
 
@@ -21,7 +21,7 @@ ul li {
     display: inline-block;
     padding: 10px, 15px;
     background-color:#7887AB;
-    border: 1px solid black;
+    border: 1px solid lightgray;
     margin: 0;
     transition: .5s;
     transition-property: background-color,
@@ -64,4 +64,14 @@ h1, h2 {
     color: white;
     text-align: center;
     font-family: 'Poiret One', sans-serif;
+}
+
+ol {
+    list-style-position: inside;
+    color: white;
+    display: inline;
+}
+
+h3 {
+    color: white;
 }
