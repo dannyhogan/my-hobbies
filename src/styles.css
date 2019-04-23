@@ -75,3 +75,18 @@ ol {
 h3 {
     color: white;
 }
+
+input {
+    display: block;
+    margin: 0 auto;
+    margin-bottom: 15px;
+}
+
+#quiz-header {
+    color: black;
+    font-family: 
+}
+
+#quiz-result {
+    color: black;
+}
