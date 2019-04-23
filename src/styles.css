@@ -78,15 +78,20 @@ h3 {
 
 input {
     display: block;
-    margin: 0 auto;
-    margin-bottom: 15px;
+    margin: 5px auto 15px auto;
 }
 
 #quiz-header {
     color: black;
-    font-family: 
+    font-family: Oswald;
 }
 
 #quiz-result {
     color: black;
+}
+
+#submit-answers {
+    color: #162955;
+    height: 30px;
+    width: 50px;
 }
