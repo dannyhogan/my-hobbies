@@ -5,7 +5,7 @@ function checkAnswers(answerOne, answerTwo, answerThree, answerFour, answerFive)
         score += 1;
     }
 
-    if(answerTwo === 10) {
+    if(answerTwo === '10') {
         score += 1;
     }
 
@@ -13,7 +13,7 @@ function checkAnswers(answerOne, answerTwo, answerThree, answerFour, answerFive)
         score += 1;
     }
 
-    if(answerFour === 3) {
+    if(answerFour === '3') {
         score += 1;
     }
 
