@@ -1,18 +1,44 @@
 const test = QUnit.test;
 
+function checkAnswers(answerOne, answerTwo, answerThree, answerFour, answerFive) {
+    let score = 0;
+
+    if(answerOne.toLowerCase() === 'fortnite') {
+        score += 1;
+    }
+
+    if(answerTwo === 10) {
+        score += 1;
+    }
+
+    if(answerThree.toLowerCase() === 'mt hood' || answerThree.toLowerCase() === 'hood' || answerThree.toLowerCase() === 'mt. hood') {
+        score += 1;
+    }
+
+    if(answerFour === 3) {
+        score += 1;
+    }
+
+    if(answerFive.toLowerCase() === 'nintendo64' || answerFive.toLowerCase() === 'nintendo 64') {
+        score += 1;
+    }
+
+    return score;
+}
+
 test('return a score of 5 if all answers are correct', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const answerOne = 'Fortnite'
-    const answerTwo = 10
-    const answerThree = 'Mt Hood'
-    const answerFour = 3
-    const answerFive = 'Nintendo64'
+    const answerOne = 'fortnite';
+    const answerTwo = 10;
+    const answerThree = 'mt hood';
+    const answerFour = 3;
+    const answerFive = 'Nintendo64';
 
-    const expectedResult = 5
+    const expectedResult = 5;
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = checkAnswers(answerOne, answerTwo, answerThree, answerFour, answerFive)
+    const result = checkAnswers(answerOne, answerTwo, answerThree, answerFour, answerFive);
     //Assert
     assert.equal(expectedResult, result);
 });
@@ -20,16 +46,33 @@ test('return a score of 5 if all answers are correct', function(assert) {
 test('return a score of 0 if all answers are incorrect', function(assert) {
     //Arrange
     // Set up your parameters and expectations
-    const answerOne = 'Donkey Kong'
-    const answerTwo = 12
-    const answerThree = 'Mt Bachelor'
-    const answerFour = 3
-    const answerFive = 'Wii'
+    const answerOne = 'Donkey Kong';
+    const answerTwo = 12;
+    const answerThree = 'Mt Bachelor';
+    const answerFour = 1;
+    const answerFive = 'Wii';
 
-    const expectedResult = 0
+    const expectedResult = 0;
     //Act 
     // Call the function you're testing and set the result to a const
-    const result = checkAnswers(answerOne, answerTwo, answerThree, answerFour, answerFive)
+    const result = checkAnswers(answerOne, answerTwo, answerThree, answerFour, answerFive);
+    //Assert
+    assert.equal(expectedResult, result);
+});
+
+test('return a score of 3 if 2 of the 5 answers are incorrect', function(assert) {
+    //Arrange
+    // Set up your parameters and expectations
+    const answerOne = 'Pokemon';
+    const answerTwo = 10;
+    const answerThree = 'Mt Hood';
+    const answerFour = 5;
+    const answerFive = 'Nintendo 64';
+
+    const expectedResult = 3;
+    //Act 
+    // Call the function you're testing and set the result to a const
+    const result = checkAnswers(answerOne, answerTwo, answerThree, answerFour, answerFive);
     //Assert
     assert.equal(expectedResult, result);
 });
